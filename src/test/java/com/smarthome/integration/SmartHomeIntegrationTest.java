@@ -18,7 +18,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Testes de integração principais do sistema Smart Home.
- * Utiliza banco H2 real em memória, sem mocks ou simulações.
  * Valida a comunicação entre Services, Repositories e banco de dados.
  */
 @SpringBootTest

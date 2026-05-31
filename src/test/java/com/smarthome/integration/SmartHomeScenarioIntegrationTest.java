@@ -21,7 +21,6 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Testes de integração - Cenários TST-03 a TST-10.
  * Valida integração real entre Service, Repository e banco H2.
- * Sem uso de mocks ou simulações.
  */
 @SpringBootTest
 @ActiveProfiles("test")
