@@ -399,7 +399,7 @@ class SmartHomeScenarioIntegrationTest {
     // ---------------------------------------------------------------------------------------
 
     @Test
-    @DisplayName("TST-12: Deve incrementar a contagem de dispositivos após cadastro")
+    @DisplayName("TST-12: Incrementar a contagem de dispositivos após cadastro")
     void shouldIncrementDeviceCountAfterRegistration() {
         long countBefore = deviceRepository.count();
 
@@ -411,7 +411,7 @@ class SmartHomeScenarioIntegrationTest {
     }
 
     @Test
-    @DisplayName("TST-13: Deve lançar exceção ao buscar dispositivo com ID inexistente")
+    @DisplayName("TST-13: Lançamento de Erro ao acesso de ID de Dispositivo Inexistente em banco (Buscar Dispositivo Inexistente)")
     void shouldThrowExceptionWhenDeviceNotFoundById() {
         RuntimeException exception = assertThrows(
                 RuntimeException.class,
@@ -422,7 +422,7 @@ class SmartHomeScenarioIntegrationTest {
     }
 
     @Test
-    @DisplayName("TST-14: Deve encontrar regras ativas por sensor após criação")
+    @DisplayName("TST-14: Buscar regras ativas por sensor após criação")
     void shouldFindActiveRulesBySensorAfterCreation() {
         Device lamp2 = new Device("Lamp Office", DeviceStatus.OFF);
         lamp2 = deviceRepository.save(lamp2);
